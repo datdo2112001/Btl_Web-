@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login Form</title>
+  <title>Register Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,21 +12,33 @@
 <body>
   <div class="container">
     <form class="form-box px-3">
-        <button type="reset"><i class="fa fa-arrow-left" aria-hidden="true"></i> Return to dashboard</button>
-    </form>
+      <button type="reset"><i class="fa fa-arrow-left" aria-hidden="true"></i> Return to dashboard</button>
+  </form>
     <div class="row px-3">
       <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
         <div class="img-left d-none d-md-flex"></div>
 
         <div class="card-body">
           <h4 class="title text-center mt-4">
-            Đăng nhập
+            Thêm tài khoản
           </h4>
           <form class="form-box px-3">
             <h5 style="font-weight: bold">ID:</h5> 
             <div class="form-input" class="input-group mb-3"> 
               <input type="ID" name="" placeholder="ID" tabindex="10" required> 
-            </div>  
+            </div> 
+            <h5 style="font-weight: bold">Loại tài khoản:</h5> 
+            <div class="form-input"> 
+              <input type="ID" name="" value="A1" tabindex="10" disabled> 
+            </div> 
+            <h5 style="font-weight: bold">Tỉnh/Thành phố</h5> 
+            <div class="search_select_box"> 
+              <select > 
+                <option>Mustard</option> 
+                <option>Ketchup</option> 
+                <option>Relish</option>
+              </select> 
+                </div> 
                 <h5 style="font-weight: bold">Mật khẩu:</h5> 
                 <div class="form-input"> 
                   <input type="password" name="" placeholder="Password" required> 
@@ -41,18 +53,18 @@
 
             <div class="mb-3">
               <button type="submit" class="btn btn-block text-uppercase">
-                Đăng nhập
+                SignIn
               </button>
             </div>
-
-            <div class="text-right">
+            <div class="text-center">
               <a href="#" class="forget-link">
-                Quên mật khẩu?
+                Không tạo được tài khoản?
               </a>
+              <br>
+              Vui lòng liên hệ <a href="#" class="forget-link">
+                  hỗ trợ
+                </a>
             </div>
-
-
-            <hr class="my-4">
           </form>
         </div>
       </div>
