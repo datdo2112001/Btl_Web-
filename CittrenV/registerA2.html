@@ -33,15 +33,16 @@
             </div> 
             <h5 style="font-weight: bold">Tỉnh/thành phố:</h5> 
             <div class="search_select_box"> 
-              <select > 
+              <select class="form-select" d="validationDefault04" required> 
+                <option selected disabled value="">Chọn tỉnh/thành phố</option>
                 <option>Mustard</option> 
                 <option>Ketchup</option> 
                 <option>Relish</option>
-              </select> 
-            </div> 
+              </select>
             <h5 style="font-weight: bold">Quận/huyện:</h5> 
             <div class="search_select_box"> 
-              <select > 
+              <select class="form-select" d="validationDefault04" required> 
+                <option selected disabled value="">Chọn quận/huyện</option>
                 <option>Mustard</option> 
                 <option>Ketchup</option> 
                 <option>Relish</option>
@@ -61,7 +62,7 @@
 
             <div class="mb-3">
               <button type="submit" class="btn btn-block text-uppercase">
-                SignIn
+                Thêm tài khoản
               </button>
             </div>
             <div class="text-center">
@@ -79,4 +80,24 @@
     </div>
   </div>
 </body>
+<script>
+  (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('form-box px-3');
+                
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+</script>
 </html>
