@@ -38,13 +38,8 @@ body{
   outline: none;
   background: transparent;
 }
-.img-left{
-  width: 45%;
-  background: url('img.jpg') center;
-  background-size: cover;
-}
-.form-input input{
-  width: 100%;
+.form-input-password input{
+  width: 400px;
   height: 45px;
   padding-left: 40px;
   margin-bottom: 20px;
@@ -54,6 +49,11 @@ body{
   border-radius: 50px;
   outline: none;
   background: transparent;
+}
+.img-left{
+  width: 40%;
+  background: url('img.jpg') center;
+  background-size: cover;
 }
 
 .form-input input::placeholder{
